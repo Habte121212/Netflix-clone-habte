@@ -1,4 +1,5 @@
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+
 
 const Request = {
   fetchComedyMovies: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
