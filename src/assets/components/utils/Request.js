@@ -13,6 +13,12 @@ const Request = {
   fetchAction: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
   fetchWestern: `/discover/movie?api_key=${API_KEY}&with_genres=37`,
   fetchAdventure: `/discover/movie?api_key=${API_KEY}&with_genres=12`,
+  fetchMystery: `/discover/movie?api_key=${API_KEY}&with_genres=9648`,
+  fetchDrama: `/discover/movie?api_key=${API_KEY}&with_genres=18`,
+  fetchCrime: `/discover/movie?api_key=${API_KEY}&with_genres=36`,
+   fetchHistory: `/discover/movie?api_key=${API_KEY}&with_genres=80`,
+    fetchMusic: `/discover/movie?api_key=${API_KEY}&with_genres=10402`,
+     fetchHorror: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
 };
 
 export default Request; 
