@@ -1,5 +1,5 @@
 import './App.css';
-import Home from './assets/pages/home/home';
+import Home from './assets/pages/Home/Home';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Login from './assets/pages/Home/Login/Login';
 import { onAuthStateChanged } from 'firebase/auth';
