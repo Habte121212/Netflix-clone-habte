@@ -1,3 +1,4 @@
+/* General Styles */
 .row {
     margin-left: 20px;
     color: white;
@@ -5,9 +6,9 @@
 
 .row__posters {
     display: flex;
-    overflow-x: auto; 
-    overflow-y: hidden; 
-    padding: 10px 0; 
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px 0;
     scroll-behavior: smooth; /* Smooth scrolling */
     gap: 10px; /* Space between images */
 }
@@ -17,7 +18,7 @@
 }
 
 .row__poster {
-    width: 100%;
+    width: 200px;  /* Default width for posters */
     height: 100px; 
     object-fit: cover; 
     border-radius: 8px;
@@ -32,8 +33,133 @@
 
 .row__posterLarge {
     height: 250px;
+    width: 200px; /* Default width for large posters */
 }
 
 .row__posterLarge:hover {
     transform: scale(1.1); /* Consistent hover effect for large images */
+}
+
+/* Media Queries */
+
+/* For small screens like mobile */
+@media (max-width: 500px) {
+    .row__posters {
+        gap: 5px; /* Smaller gap for mobile */
+        padding: 10px;  /* Adjust padding for small screens */
+    }
+
+    .row__poster {
+        width: 150px;  /* Smaller poster size for mobile */
+        height: 80px;
+    }
+
+    .row__posterLarge {
+        height: 200px;  /* Adjust large poster size */
+        width: 150px;
+    }
+}
+
+/* For medium screens like tablets */
+@media (max-width: 768px) {
+    .row__posters {
+        gap: 8px; /* Adjust gap for tablets */
+    }
+
+    .row__poster {
+        width: 170px;  /* Adjust poster width */
+        height: 90px;
+    }
+
+    .row__posterLarge {
+        height: 220px; /* Adjust large poster height */
+        width: 170px;
+    }
+}
+
+/* For larger screens like desktops */
+@media (min-width: 1025px) {
+    .row__posters {
+        gap: 15px; /* Larger gap for desktop */
+    }
+
+    .row__poster {
+        width: 250px;  /* Larger poster width for desktop */
+        height: 150px;
+    }
+
+    .row__posterLarge {
+        height: 300px;  /* Larger large posters for desktop */
+        width: 250px;
+    }
+}
+
+/* Header Styles */
+.header_outer_container {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    height: 10vh;
+    color: white;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    list-style: none;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.header_left ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header_right ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Dropdown Hover Effect */
+.dropdown {
+    position: relative;
+}
+
+.signout_container {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Show signout on hover */
+.dropdown:hover .signout_container {
+    display: block;
 }

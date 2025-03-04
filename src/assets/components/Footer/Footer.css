@@ -3,7 +3,7 @@
   color: gray;
   display: flex;
   justify-content: center;
-  padding: 40px 0; /* Added padding for better spacing */
+  padding: 40px 0;
 }
 
 .footer_inner-containear {
@@ -21,7 +21,7 @@
 .footer_data {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0; /* Added margin for spacing */
+  margin: 20px 0;
 }
 
 .footer_data ul {
@@ -30,8 +30,8 @@
   flex-direction: column;
   justify-content: space-around;
   height: 12vh;
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  padding: 0;
+  margin: 0;
 }
 
 .footer_data ul li {
@@ -43,15 +43,69 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: #fff 1px solid ;
+  border: #fff 1px solid;
   width: 10%;
-  margin: 20px 0; /* Adjusted margin */
+  margin: 20px 0;
   cursor: pointer;
-  padding: 5px; /* Added padding for better appearance */
+  padding: 5px;
 }
 
 .copy_write {
   font-size: 12px;
   margin-bottom: 10px;
-  /* text-align: center; Center the text */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 800px) {
+  .footer_inner-containear {
+    width: 90%;
+  }
+
+  .footer_icons {
+    width: 30%; /* Adjust width of icons */
+    justify-content: space-around;
+  }
+
+  .footer_data {
+    flex-direction: column; /* Stack the footer items vertically */
+    align-items: center;
+  }
+
+  .footer_data ul {
+    width: 100%; /* Make each list take full width */
+    margin-bottom: 10px; /* Add space between lists */
+  }
+
+  .service_code {
+    width: 100%; /* Make service code take full width */
+    justify-content: center;
+  }
+
+  .copy_write {
+    font-size: 10px; /* Reduce font size on smaller screens */
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer_icons {
+    width: 40%; /* Increase width of icons on very small screens */
+    justify-content: space-evenly;
+  }
+
+  .footer_data ul li {
+    font-size: 12px; /* Reduce font size for mobile screens */
+  }
+
+  .service_code {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .copy_write {
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+  }
 }

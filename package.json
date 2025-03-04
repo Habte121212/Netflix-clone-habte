@@ -18,11 +18,14 @@
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "express": "^4.21.2",
+    "firebase": "^11.4.0",
     "movie-trailer": "^3.2.2",
     "mysql2": "^3.12.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-firebase-hooks": "^5.1.1",
     "react-router-dom": "^7.2.0",
+    "react-toastify": "^11.0.5",
     "react-youtube": "^10.1.0"
   },
   "devDependencies": {
@@ -49,5 +52,5 @@
   "bugs": {
     "url": "https://github.com/Habte121212/Netflix-clone-habte/issues"
   },
-  "homepage": "https://github.com/Habte121212/Netflix-clone-habte#readme"
+  "homepage": "https://habte121212.github.io/Netflix-clone-habte"
 }

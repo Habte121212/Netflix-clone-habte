@@ -1,12 +1,14 @@
-.login{
+.login {
     height: 100vh;
     background-image: linear-gradient(#0000007e, #0000007e), url(/baground_banner.png);
     padding: 20px 8%;
 }
-.login_logo{
+
+.login_logo {
     width: 150px;
 }
-.login_form{
+
+.login_form {
     width: 100%;
     max-width: 450px;
     background: rgba(0, 0, 0, 0.75);
@@ -14,14 +16,15 @@
     padding: 60px;
     margin: auto;
     color: white;
-
 }
-.login_form h1{
+
+.login_form h1 {
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 28px;
 }
-.login_form input{
+
+.login_form input {
     width: 100%;
     height: 40px;
     background: #333;
@@ -33,9 +36,9 @@
     padding: 16px 20px;
     font-size: 16px;
     font-weight: 520;
-
 }
-.login_form button{
+
+.login_form button {
     width: 100%;
     border: 0;
     padding: 16px;
@@ -47,32 +50,125 @@
     margin-top: 20px;
     cursor: pointer;
 }
-.form_help{
+
+.form_help {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #b3b3b3b3;
-    font-size:13px ;
-
+    font-size: 13px;
 }
-.remember{
+
+.remember {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.remember input{
+
+.remember input {
     width: 18px;
     height: auto;
 }
-.form_switch{
+
+.form_switch {
     margin-top: 40px;
     color: #737373;
-
 }
-.form_switch span{
+
+.form_switch span {
     margin-left: 6px;
     color: #fff;
     font-weight: 500;
     cursor: pointer;
+}
 
+.login_spinner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_spinner img {
+    width: 300px;
+}
+
+/* Media Queries for responsiveness */
+
+/* For small devices like mobile */
+@media (max-width: 500px) {
+    .login {
+        padding: 15px 5%;
+    }
+
+    .login_logo {
+        width: 120px;  /* Smaller logo for small screens */
+    }
+
+    .login_form {
+        padding: 20px;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .login_form h1 {
+        font-size: 24px;  /* Smaller font size for heading */
+    }
+
+    .login_form input, .login_form button {
+        font-size: 14px;  /* Smaller font size for inputs and button */
+        padding: 12px;    /* Adjust padding for smaller screens */
+    }
+}
+
+/* For medium devices like tablets */
+@media (max-width: 768px) {
+    .login {
+        padding: 20px 6%;
+    }
+
+    .login_logo {
+        width: 130px;  /* Adjust logo size for tablets */
+    }
+
+    .login_form {
+        max-width: 80%;
+        padding: 40px;
+    }
+
+    .login_form h1 {
+        font-size: 28px;  /* Adjust heading font size */
+    }
+
+    .login_form input, .login_form button {
+        font-size: 15px;
+        padding: 14px;
+    }
+}
+
+/* For large devices like desktops */
+@media (min-width: 1025px) {
+    .login {
+        padding: 20px 8%;
+    }
+
+    .login_logo {
+        width: 150px;  /* Default logo size */
+    }
+
+    .login_form {
+        padding: 60px;
+        margin-top: 50px;
+    }
+
+    .login_form h1 {
+        font-size: 32px;
+    }
+
+    .login_form input, .login_form button {
+        font-size: 16px;
+        padding: 16px;
+    }
 }
