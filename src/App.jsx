@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => { 
-      console.log("Auth State Changed:", user); // ✅ Debug log
+      console.log("Auth State Changed:", user); 
       if (user) {
         console.log("Logged In");
         navigate('/'); 
@@ -23,15 +23,15 @@ function App() {
       }
     });
 
-    return () => unsubscribe(); // ✅ Cleanup to avoid memory leaks
-  }, [navigate]); // ✅ Dependency added
+    return () => unsubscribe();
+  }, [navigate]); 
 
   return (
     <div>
       <ToastContainer theme = 'dark'/>
       <Routes>
-        <Route path="/" element={<Home />} />  {/* ✅ Ensure this works */}
-        <Route path="/login" element={<Login />} />  {/* ✅ Corrected '/login' */}
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />  
       </Routes>
     </div>
   );

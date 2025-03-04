@@ -69,19 +69,16 @@
     width: 18px;
     height: auto;
 }
-
 .form_switch {
     margin-top: 40px;
     color: #737373;
 }
-
 .form_switch span {
     margin-left: 6px;
     color: #fff;
     font-weight: 500;
     cursor: pointer;
 }
-
 .login_spinner {
     width: 100%;
     height: 100vh;
@@ -89,21 +86,15 @@
     align-items: center;
     justify-content: center;
 }
-
 .login_spinner img {
     width: 300px;
 }
-
-/* Media Queries for responsiveness */
-
-/* For small devices like mobile */
 @media (max-width: 500px) {
     .login {
         padding: 15px 5%;
     }
-
     .login_logo {
-        width: 120px;  /* Smaller logo for small screens */
+        width: 120px;  
     }
 
     .login_form {
@@ -112,52 +103,43 @@
         margin-left: 20px;
         margin-right: 20px;
     }
-
     .login_form h1 {
-        font-size: 24px;  /* Smaller font size for heading */
+        font-size: 24px; 
     }
-
     .login_form input, .login_form button {
-        font-size: 14px;  /* Smaller font size for inputs and button */
-        padding: 12px;    /* Adjust padding for smaller screens */
+        font-size: 14px; 
+        padding: 12px;    
     }
 }
-
-/* For medium devices like tablets */
 @media (max-width: 768px) {
     .login {
         padding: 20px 6%;
     }
-
     .login_logo {
-        width: 130px;  /* Adjust logo size for tablets */
+        width: 130px; 
     }
 
     .login_form {
         max-width: 80%;
         padding: 40px;
     }
-
     .login_form h1 {
-        font-size: 28px;  /* Adjust heading font size */
+        font-size: 28px; 
     }
-
     .login_form input, .login_form button {
         font-size: 15px;
         padding: 14px;
     }
 }
 
-/* For large devices like desktops */
 @media (min-width: 1025px) {
     .login {
         padding: 20px 8%;
     }
 
     .login_logo {
-        width: 150px;  /* Default logo size */
+        width: 150px; 
     }
-
     .login_form {
         padding: 60px;
         margin-top: 50px;
@@ -166,7 +148,6 @@
     .login_form h1 {
         font-size: 32px;
     }
-
     .login_form input, .login_form button {
         font-size: 16px;
         padding: 16px;

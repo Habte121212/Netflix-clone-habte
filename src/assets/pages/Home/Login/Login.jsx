@@ -2,32 +2,32 @@ import React, { useState } from 'react';
 import './Login.css';
 import logo from '../../../../assets/images/logo.png';
 import { login, signup } from "../../../../firebase.js";
-import netflixSpinner from '../../../images/netflixSpinner.webp';  // Correct the import
+import netflixSpinner from '../../../images/netflixSpinner.webp';  // 
 
 const Login = () => {
   const [SignState, setSignstate] = useState("Sign In");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(null);  // ✅ Store error message
+  const [error, setError] = useState(null);  
   const [loading, setLoading] = useState(false);
 
   const user_auth = async (event) => {
     event.preventDefault();
-    setError(null); // Reset errors
+    setError(null); 
     setLoading(true);
 
     try {
-      if (SignState === "Sign In") {  // ✅ Fixed typo
+      if (SignState === "Sign In") {  
         await login(email, password);
-        console.log("✅ User logged in");
+        console.log("User logged in");
       } else {
         await signup(name, email, password);
-        console.log("✅ User signed up");
+        console.log("User signed up");
       }
     } catch (err) {
-      console.error("❌ Authentication Error:", err.message);
-      setError(err.message);  // ✅ Display error to user
+      console.error(" Authentication Error:", err.message);
+      setError(err.message); 
     }
     setLoading(false);
   };
@@ -42,9 +42,8 @@ const Login = () => {
         <img src={logo} className='login_logo' alt="Netflix Logo" />
         <div className='login_form'>
           <h1>{SignState}</h1>
-          {error && <p style={{ color: "red" }}>{error}</p>}  {/* ✅ Show errors */}
-
-          <form onSubmit={user_auth}>  {/* ✅ Prevent form reload */}
+          {error && <p style={{ color: "red" }}>{error}</p>} 
+          <form onSubmit={user_auth}> 
             {SignState === "Sign Up" && (
               <input 
                 value={name} 
@@ -68,7 +67,7 @@ const Login = () => {
               placeholder='Password' 
               required 
             />
-            <button type="submit">{SignState}</button> {/* ✅ No onClick needed */}
+            <button type="submit">{SignState}</button>
 
             <div className='form_help'>
               <div className='remember'>

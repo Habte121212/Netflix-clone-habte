@@ -55,34 +55,34 @@
   margin-bottom: 10px;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 800px) {
   .footer_inner-containear {
     width: 90%;
   }
 
   .footer_icons {
-    width: 30%; /* Adjust width of icons */
+    width: 30%; 
     justify-content: space-around;
   }
 
   .footer_data {
-    flex-direction: column; /* Stack the footer items vertically */
+    flex-direction: column; 
     align-items: center;
   }
 
   .footer_data ul {
-    width: 100%; /* Make each list take full width */
-    margin-bottom: 10px; /* Add space between lists */
+    width: 100%; 
+    margin-bottom: 10px; 
   }
 
   .service_code {
-    width: 100%; /* Make service code take full width */
+    width: 100%; 
     justify-content: center;
   }
 
   .copy_write {
-    font-size: 10px; /* Reduce font size on smaller screens */
+    font-size: 10px;
     text-align: center;
     width: 100%;
   }
@@ -90,12 +90,12 @@
 
 @media (max-width: 500px) {
   .footer_icons {
-    width: 40%; /* Increase width of icons on very small screens */
+    width: 40%; 
     justify-content: space-evenly;
   }
 
   .footer_data ul li {
-    font-size: 12px; /* Reduce font size for mobile screens */
+    font-size: 12px; 
   }
 
   .service_code {
